@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 // Simple console.log, no semi colon
 console.log("Hello")
 console.log(' ')
@@ -50,8 +52,13 @@ console.log("5");
 console.log("6");
 console.log(7);
 
-// Prints fibonacci up to 34
-const number = 34;
+/* Prints fibonacci up to 34
+    number:   Number of terms in the Fibonacci series
+    n1:       First number in the series
+    n2:       Second number in the series
+    nextTerm: Assigning the next term in the series.
+*/
+const number = 7;
 let n1 = 0, n2 = 1, nextTerm;
 
 console.log('Fibonacci Series:');
