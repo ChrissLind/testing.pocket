@@ -1,0 +1,1 @@
+console.log("Im inside a folder!");
