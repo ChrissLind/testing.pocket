@@ -10,3 +10,22 @@ console.log(string);
 string = "World!";
 console.log(string);
 
+// Mega bracket console.log
+let bracket = "Deep inside the brackets"
+{
+    {
+        {
+            {
+                {
+                    {
+                        {
+                            {
+                                console.log(bracket)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
