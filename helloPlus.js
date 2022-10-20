@@ -49,3 +49,16 @@ console.log("4");
 console.log("5");
 console.log("6");
 console.log(7);
+
+// Prints fibonacci up to 34
+const number = 34;
+let n1 = 0, n2 = 1, nextTerm;
+
+console.log('Fibonacci Series:');
+
+for (let i = 1; i <= number; i++) {
+    console.log(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+}
