@@ -70,7 +70,7 @@ for (let i = 1; i <= number; i++) {
     n2 = nextTerm;
 }
 
-// console.log up to 1000 coqui's
+// console.log up to 'limit' number of coqui's
 function countCoqui(limit){
     for (var i = 1; i < limit; i +=1){
         console.log(i + " Coqui(s)")
