@@ -20,7 +20,7 @@ let bracket = "Deep inside the brackets"
                     {
                         {
                             {
-                                console.log(bracket)
+                                console.log(bracket);
                             }
                         }
                     }
@@ -29,3 +29,18 @@ let bracket = "Deep inside the brackets"
         }
     }
 }
+
+// Just a lot of console.log(s)
+console.log("One ring to rule them all,");
+console.log("one ring to find them,");
+console.log("One ring to bring them all,");
+console.log("and in the darkness bind them;");
+console.log("In the Land of Mordor");
+console.log("where the shadows lie.");
+console.log("1");
+console.log("2");
+console.log("3");
+console.log("4");
+console.log("5");
+console.log("6");
+console.log(7);
