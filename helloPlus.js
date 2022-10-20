@@ -37,6 +37,7 @@ console.log("One ring to bring them all,");
 console.log("and in the darkness bind them;");
 console.log("In the Land of Mordor");
 console.log("where the shadows lie.");
+console.log('');
 console.log("1");
 console.log("2");
 console.log("3");
