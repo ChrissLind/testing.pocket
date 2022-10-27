@@ -1,19 +1,27 @@
-let total = 25.00;
-let percent = .17;
+let total = 50.00;
+let percent = .13;
 let roundTarget = .02;
 
-let baseTip = total * percent
+let baseTip = total * percent;
 
-let roundedTip;
-if (baseTip % 1 === 0) {
-    roundedTip = baseTip + roundTarget
+let payment = total + baseTip;
+
+let roundedPayment
+if (roundTarget) {
+    if (payment % 1 == 0) {
+        roundedPayment = payment + roundTarget;
+    } else {
+        roundedPayment = Math.ceil(payment) - (1.00 - roundTarget);
+    }
+
+    if (roundedPayment < payment) {
+        roundedPayment += 1
+    }
+    console.log(`Base tip ${baseTip.toFixed(2)}`)
+    console.log(`Regular payment: ${payment.toFixed(2)}`)
+    console.log(`Rounded payment: ${roundedPayment.toFixed(2)}`)
 } else {
-    roundedTip = Math.ceil(baseTip) - (1.00 - roundTarget)
+    console.log(`Base tip: ${baseTip.toFixed(2)}`)
+    console.log(`Payment: ${payment.toFixed(2)}`)
 }
 
-if (roundedTip < baseTip) {
-    roundedTip += 1
-}
-console.log(`Base Tip: ${baseTip.toFixed(2)}`)
-console.log(`Rounded Tip: ${roundedTip.toFixed(2)}`)
-console.log(`Total to pay: ${(total + roundedTip).toFixed(2)}`)
